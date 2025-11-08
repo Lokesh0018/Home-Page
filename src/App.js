@@ -7,12 +7,14 @@ import Services from './Services/Services';
 import FilmProduction from './Services/FilmProduction';
 import Branding from './Services/Branding';
 import ArtCuration from './Services/ArtCuration';
+import Porotofolio from './Portofolio/Porotofolio';
+import Contact from './Contact/Contact';
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <ArtCuration />
+      <Contact />
     </div>
   );
 }
