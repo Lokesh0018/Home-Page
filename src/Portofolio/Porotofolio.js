@@ -7,16 +7,16 @@ import PortFooter from "../asserts/Port Footer.png";
 
 const Porotofolio = () => {
     return (
-        <div className="porotofolio">
+        <div className="portfolio">
             <div className="navLogoContainer">
                 <img src={Logo} alt="" className="navLogo" />
             </div>
             <div className="portHeader">The Highlight Reel</div>
             <div className="portCaption">Watch the magic we’ve captured.</div>
-            <img src={Cam} alt="" className="portCam"/>
+            <img src={Cam} alt="" className="portCam" />
             <div className="vidPlayerContainer">
-            <img src={VideoPlayer} alt="" className="vidPlayer" />
-            <span src={Thumbnail} alt="" className="thumbnail" />
+                <img src={VideoPlayer} alt="" className="vidPlayer" />
+                <span src={Thumbnail} alt="" className="thumbnail" />
             </div>
             <img src={PortFooter} alt="" className="portFooter" />
         </div>

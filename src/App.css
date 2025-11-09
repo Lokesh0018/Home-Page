@@ -9,6 +9,8 @@
   --border: 1px solid black;
   --vector: #FDD0C1;
   --lableBorder: #EAEAEA;
+  --red: #FF0000;
+  --green: #0fae0f;
 }
 
 * {
@@ -828,4 +830,779 @@ a {
 
 .formFooter hr {
   border-color: var(--cntBtn);
+}
+
+.err {
+  font-family: Halant;
+  color: var(--red);
+  font-weight: 800;
+  text-decoration: underline double;
+}
+
+.suc {
+  font-family: Halant;
+  color: var(--green);
+  font-weight: 800;
+  text-decoration: underline double;
+}
+
+/* 🌐 Mobile responsiveness */
+@media (max-width: 480px) {
+
+  .App {
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 30px;
+  }
+
+  .bar{
+    height: 2px;
+    width: 100%;
+  }
+
+  .bar.top.open {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.bar.bottom.open {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+  .nav {
+    height: 103px;
+    width: 100vw;
+  }
+
+  .navItems {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .navItems ul {
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  .navLogoContainer {
+    height: 40px;
+    width: 60px;
+    left: 5px;
+  }
+
+  .navLogo {
+  width: 54px;
+  height: 28px;
+}
+
+  .cntBtn {
+    width: 60px;
+    height: 40px;
+    font-size: 10px;
+    gap: 0;
+  }
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+ .heroContent .leftContent{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center
+ }
+
+ .lable1 {
+    font-size: 50px;
+    width: 300px;
+    height: 150px;
+ }
+
+ .lable2 {
+    font-size: 30px;
+ }
+
+ .lable3 {
+    font-size: 18px;
+    width: 400px;
+ }
+
+ .services {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+ }
+
+.servicesCards {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.servicesCard.c1,
+.servicesCard.c2,
+.servicesCard.c3 {
+  transform: rotate(0deg);
+}
+
+.servicesHeader {
+  font-size: 20px;
+}
+
+.backBtn {
+  top: 200px;
+  left: 30px;
+}
+
+.filmProduction,
+.branding,
+.artCuration {
+  height: 200vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.servicesCard.fp {
+  top: 250px;
+  left: 50px;
+}
+
+.grp1,
+.vector1,
+.tape.t1,
+.tape.t2,
+.tape.t3,
+.cam1,
+.cam3,
+.cam4,
+.br1,
+.br3,
+.br4,
+.ac1,
+.ac3,
+.ac4,
+.brands,
+.obj,
+.portFooter,
+.portCam,
+.contactFooter{
+  display: none;
+}
+
+.cam2,
+.br2,
+.ac2 {
+  top: 1050px;
+  left: 0px;
+  width: 100px;
+}
+
+.fpContent {
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 700px;
+  left: 20px;
+  gap: 20px;
+}
+
+.aboutTeam{
+  height: 150vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.aboutCard {
+  top: 100px;
+  left: 0;
+}
+
+.gateImg {
+  height: 100px;
+  width: 100px;
+  top: 100px;
+}
+
+.group {
+  left: 10px;
+  width: 400px;
+  top: 600px;
+}
+
+.grp2 {
+  top: 520px;
+  left: 50px
+}
+
+.vector2 {
+  top: 550px;
+  left: 150px;
+  width: 100px;
+}
+
+.grp3 {
+  top: 500px;
+  left: 300px;
+}
+
+.vector3 {
+  top: 550px;
+  left: 300px;
+  width: 50px;
+}
+
+
+.aboutUs{
+  height: 150vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.aboutUsHeader {
+  top: 100px;
+  left: 30px;
+  font-size: 22px;
+}
+
+.aboutUsContent {
+  top: 130px;
+  left: 0px;
+  width: 420px;
+  font-size: 18px;
+}
+
+.aboutUsTxt {
+  font-size: 32px;
+  width: 400px;
+  top: 250px;
+  left: 10px;
+}
+
+.aboutUsCard.c1,
+.aboutUsCardContent.c1 {
+  transform: rotate(0);
+  top: 400px;
+}
+
+.aboutUsCard.c2,
+.aboutUsCardContent.c2 {
+  transform: rotate(0);
+  top: 650px;
+  left: 70px;
+}
+
+.aboutUsCard.c3,
+.aboutUsCardContent.c3 {
+  transform: rotate(0);
+  top: 900px;
+  left: 70px;
+}
+
+.portfolio {
+  height: 100vh;
+  width: 100vw;
+}
+
+.portCaption {
+  position: absolute;
+  left: 40px;
+  width: 350px;
+}
+
+.vidPlayer {
+  left: -50px;
+  height: 300px;
+  width: 500px;
+}
+
+.contact {
+  height: 150vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.contactTxt {
+  top: 100px;
+  left: 20px;
+  width: 400px;
+}
+
+.contactForm {
+  position: absolute;
+  top: 300px;
+  left: 0px;
+}
+
+.formHeader {
+  position: absolute;
+  left: 100px;
+}
+
+.formCaption {
+  position: absolute;
+  top: 70px;
+  width: 400px;
+  text-align: center;
+  left: 20px;
+}
+
+.formContent {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width: 400px;
+  height: auto;
+}
+
+.formFooter {
+  position: absolute;
+  bottom: 70px;
+  left: 40px;
+}
+
+.suc,.err {
+  position: absolute;
+  left: 120px;
+  bottom: 20px;
+}
+
+}
+
+
+/* 💻 TABLET (481px–1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .App {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+    .navLogoContainer {
+    height: 40px;
+    width: 60px;
+    left: 20px;
+  }
+  
+  .navLogo {
+  width: 80px;
+  height: 40px;
+}
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+ .heroContent .leftContent{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center
+ }
+  .lable1 {
+    font-size: 80px;
+    width: 800px;
+    height: 150px;
+ }
+
+ .lable2 {
+    font-size: 50px;
+ }
+
+ .lable3 {
+    font-size: 24px;
+    width: 700px;
+ }
+
+ 
+ .services {
+  height: 100%;
+  width: 100vw;
+ }
+
+ .servicesCards {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.servicesCard.c1,
+.servicesCard.c2,
+.servicesCard.c3 {
+  transform: rotate(0deg);
+}
+
+.tape.t1,
+.tape.t2,
+.tape.t3{
+  display: none;
+}
+
+
+.filmProduction,
+.branding,
+.artCuration {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: auto;
+}
+
+.cam1,
+.cam3,
+.cam4,
+.br1,
+.br3,
+.br4,
+.ac1,
+.ac3,
+.brands{
+  display: none;
+}
+
+
+.cam2,
+.br2,
+.ac2 {
+  top: 650px;
+  left: 350px;
+  width: 100px;
+}
+
+.servicesCard.fp {
+  top: 300px;
+  left: 50px;
+}
+
+.fpContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 250px;
+  left: 400px;
+  gap: 20px;
+  width: 350px;
+}
+
+.backBtn {
+  top: 250px;
+  left: 30px;
+}
+
+.aboutTeam,.aboutus {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.aboutCard {
+  top: 70px;
+  left: 50px;
+}
+
+.gateImg {
+  top: 500px;
+  left: -100px;
+  height: 150px;
+}
+
+.group {
+  left: 200px;
+  width: 400px;
+  top: 450px;
+}
+
+.vector1 {
+  left: 80px;
+  bottom: -80px;
+  width: 120px;
+}
+
+.grp1 {
+  left: 20px;
+  bottom: -80px;
+}
+
+.grp2 {
+  top: 400px;
+  left: 300px;
+}
+
+.vector2 {
+  top: 420px;
+  left: 350px;
+  width: 100px
+}
+
+.grp3 {
+  top: 350px;
+  right: 0px;
+}
+
+.vector3 {
+  top: 400px;
+  right: 50px;
+}
+
+.aboutUs{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.aboutUsHeader {
+  top: 100px;
+  left: 200px;
+  font-size: 22px;
+}
+
+.aboutUsContent {
+  top: 130px;
+  left: 80px;
+  width: 600px;
+  font-size: 18px;
+}
+
+.aboutUsTxt {
+  font-size: 32px;
+  width: 600px;
+  top: 250px;
+  left: 100px;
+}
+
+.obj {
+  bottom: 0;
+  left: 250px;
+  width: 250px;
+}
+
+.portfolio{
+  height: 100vh;
+  width: 100vw;
+}
+
+.vidPlayer {
+  top: 180px;
+  left: 120px;
+  height: 300px;
+  width: 500px
+}
+
+.thumbnail{
+  display: none;
+}
+
+.portCam{
+  height: 300px;
+  bottom: 5px;
+  left: 0;
+  width: 100px;
+}
+
+.portFooter{
+  height: 400px;
+}
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+}
+
+.contactForm {
+  position: absolute;
+  top: 60px;
+  left: 200px;
+}
+
+.contactTxt {
+  font-size: 16px;
+  width: 280px;
+  top: 200px;
+  left: 10px;
+}
+
+}
+
+
+/* 🖥️ MINI DESKTOP (1025px–1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .App {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .lable1 {
+    font-size: 80px;
+    width: 700px;
+    height: 150px;
+    margin: 30px 40px 0 0;
+ }
+
+ .tape.t1 {
+  left: 120px;
+}
+
+.tape.t2 {
+  left: 550px;
+ }
+
+ .tape.t3 {
+  right: 120px;
+ }
+
+ .services {
+  height: 100%;
+  width: 100vw;
+ }
+
+.fpContent {
+  left: 550px;
+}
+
+.cam1 {
+  top: 130px;
+  width: 100px;
+  height: 150px;
+}
+
+.cam3 {
+  right: 300px;
+  bottom: 200px;
+}
+
+.br3 {
+  bottom: 200px;
+}
+
+.br4 {
+  top: 130px;
+  width: 100px;
+}
+
+.ac3 {
+  top: 120px;
+  width: 100px;
+}
+
+.aboutTeam {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.aboutUs{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.brands {
+  right: 0;
+  width: 750px;
+}
+
+.obj {
+  right: 100px;
+}
+
+.aboutUsTxt {
+  font-size: 36px;
+  width: 600px;
+}
+
+
+.portfolio{
+  height: 100vh;
+  width: 100vw;
+}
+
+.thumbnail {
+  top: 500px;
+  left: 450px;
+}
+
+.portCam{
+  position: absolute;
+  bottom: 0;
+}
+
+.portFooter{
+  height: 800px;
+}
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+}
+
+.contactTxt {
+  font-size: 22px;
+  width: 500px;
+  line-height: 30px;
+}
+
 }

@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
 
 const FilmProduction = () => {
     return (
-        <div className="services">
+        <div className="filmProduction">
             <div className="navLogoContainer">
                 <img src={Logo} alt="" className="navLogo" />
             </div>

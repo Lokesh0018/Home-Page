@@ -6,7 +6,7 @@ import Obj from "../asserts/obj.png"
 
 const AboutUs = () => {
     return (
-        <div className="aboutUS">
+        <div className="aboutUs">
             <div className="navLogoContainer">
                 <img src={Logo} alt="" className="navLogo" />
             </div>
